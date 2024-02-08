@@ -140,6 +140,12 @@ function blob_fixup() {
             echo "Shim: Patching ${1} with libshim_c2"
             "${PATCHELF}" --add-needed "libshim_c2.so" "${2}"
             ;;
+
+        vendor/lib*/libskeymint10device.so|vendor/lib*/libskeymint_cli.so)
+            echo "Shim: Patching ${1} for libcrypto ABI break"
+            "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-tm.so" "${2}"
+            "${PATCHELF}" --add-needed "libshim_crypto.so" "${2}"
+            ;;
     esac
 }
 
