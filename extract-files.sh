@@ -139,6 +139,8 @@ function blob_fixup() {
             echo "Shim: Patching ${1} for libcrypto ABI break"
             "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-tm.so" "${2}"
             "${PATCHELF}" --add-needed "libshim_crypto.so" "${2}"
+            echo "Patching ${1} to use android.hardware.security.rkp-V3-ndk.so"
+            "${PATCHELF}" --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
             ;;
 
         vendor/lib*/vendor.samsung.hardware.camera.device@5.0-impl.so)
