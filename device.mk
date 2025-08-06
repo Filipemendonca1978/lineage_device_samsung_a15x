@@ -10,6 +10,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 34
 
+# Audio HAL
+PRODUCT_PACKAGES += \
+    android.hardware.audio.service \
+    android.hardware.audio@7.0-impl \
+    android.hardware.audio.effect@7.0-impl \
+    audio.primary.default \
+    audio.r_submix.default \
+    audio.usb.default
+
+# Audio libraries  
+PRODUCT_PACKAGES += \
+    libaudiofoundation \
+    libaudioclient_aidl_conversion \
+    audioclient-types-aidl-cpp \
+    framework-permission-aidl-cpp \
+    shared-file-region-aidl-cpp
+    
 # fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
