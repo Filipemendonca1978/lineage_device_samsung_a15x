@@ -110,6 +110,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.logger-service.rc",
+    src: "etc/init.logger-service.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.mtkgki.rc",
     src: "etc/init.mtkgki.rc",
     sub_dir: "init/hw",

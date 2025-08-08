@@ -140,6 +140,7 @@ PRODUCT_PACKAGES += \
     init.a15x.rc \
     init.mt6835.rc \
     init.mt6835.usb.rc \
+    init.logger-service.rc \
     init.mtkgki.rc \
     init.project.rc \
     init.sec.rc \
