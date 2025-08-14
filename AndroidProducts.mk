@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_a15x.mk
+    $(LOCAL_DIR)/pixelage_a15x.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_a15x-user \
-    lineage_a15x-userdebug \
-    lineage_a15x-eng
+    pixelage_a15x-user \
+    pixelage_a15x-userdebug \
+    pixelage_a15x-eng

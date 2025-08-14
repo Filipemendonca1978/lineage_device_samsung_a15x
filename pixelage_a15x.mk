@@ -8,17 +8,25 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Pixelage stuff.
+$(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
 
 # Inherit from a15x device
 $(call inherit-product, device/samsung/a15x/device.mk)
 
+TARGET_BOOT_ANIMATION_RES := 1080
+
 PRODUCT_DEVICE := a15x
-PRODUCT_NAME := lineage_a15x
+PRODUCT_NAME := pixelage_a15x
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A156M
 PRODUCT_MANUFACTURER := samsung
+
+# Pixelage
+PIXELAGE_BUILD := a15x
+PIXELAGE_MAINTAINER := Flopster101
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
 
