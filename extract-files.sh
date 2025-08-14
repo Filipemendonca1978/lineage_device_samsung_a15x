@@ -75,6 +75,11 @@ function blob_fixup() {
             echo "Patching ${1} to use libuuid_vendor.so"
             "${PATCHELF}" --replace-needed "libuuid.so" "libuuid_vendor.so" "${2}"
             ;;
+
+        vendor/bin/hw/vendor.samsung.hardware.hyper-service)
+            echo "Patching ${1} to use libhyper_vendor.so"
+            "${PATCHELF}" --replace-needed "libhyper.so" "libhyper_vendor.so" "${2}"
+            ;;
     esac
 }
 
