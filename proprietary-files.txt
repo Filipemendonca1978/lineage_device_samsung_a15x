@@ -1,8 +1,6 @@
 # Unpinned blobs from a15xub-user 15 AP3A.240905.015.A2 A156MUBS6CYF2 release-keys
 
 # Audio proprietary
-vendor/bin/hw/android.hardware.audio.service.mediatek
-vendor/etc/init/android.hardware.audio.service.mediatek.rc
 vendor/lib/hw/audio.primary.mediatek.so
 vendor/lib/hw/audio.primary.mt6835.so
 vendor/lib/hw/audio.r_submix.mediatek.so
