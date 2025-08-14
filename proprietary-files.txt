@@ -1469,8 +1469,6 @@ vendor/bin/applypatch
 vendor/bin/audiocmdservice_atci
 vendor/bin/autobt
 vendor/bin/bip_ap
-vendor/bin/boringssl_self_test32
-vendor/bin/boringssl_self_test64
 vendor/bin/bt_dump
 vendor/bin/camera_tilt_calibration_info_1_2_default.bin
 vendor/bin/cass
