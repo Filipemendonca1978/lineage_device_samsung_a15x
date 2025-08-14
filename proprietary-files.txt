@@ -1790,7 +1790,6 @@ vendor/etc/sysconfig/vendor-apex-allowlist.xml
 vendor/etc/tp_mfnr/IQParam.bin
 vendor/etc/tp_sfnr/IQParam.bin
 vendor/etc/vintf/manifest/deviceManifest.xml
-vendor/etc/vintf/manifest/dumpstate-default.xml
 vendor/etc/vintf/manifest/face-default-sec.xml
 vendor/etc/vintf/manifest/hyper-default-sec.xml
 vendor/etc/vintf/manifest/iweaver_v1_manifest.xml
