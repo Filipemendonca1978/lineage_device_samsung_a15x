@@ -2170,7 +2170,7 @@ vendor/lib/libtranslator_mdmi_v2.8.2.so
 vendor/lib/libtranslator_utils.so
 vendor/lib/libudf.so
 vendor/lib/liburee_meta_drmkeyinstall.so
-vendor/lib/libuuid.so
+vendor/lib/libuuid.so:vendor/lib/libuuid_vendor.so;FIX_SONAME
 vendor/lib/libvcodec_oal.so
 vendor/lib/libvcodec_utility.so
 vendor/lib/libvcodec_utility_plat.mt6835.so
@@ -2507,7 +2507,7 @@ vendor/lib64/libtvm_runtime.so
 vendor/lib64/libtvm_wrapper.so
 vendor/lib64/libudf.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
-vendor/lib64/libuuid.so
+vendor/lib64/libuuid.so:vendor/lib64/libuuid_vendor.so;FIX_SONAME
 vendor/lib64/libvainr_model.so
 vendor/lib64/libvcodec_oal.so
 vendor/lib64/libvcodecdrv_header_stub.so

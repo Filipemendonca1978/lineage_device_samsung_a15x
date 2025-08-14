@@ -70,6 +70,11 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "android.hardware.graphics.common-V3-ndk.so" "android.hardware.graphics.common-V6-ndk.so" "${2}"
             "${PATCHELF}" --replace-needed "android.hardware.graphics.allocator-V1-ndk.so" "android.hardware.graphics.allocator-V2-ndk.so" "${2}"
             ;;
+
+        vendor/bin/tzdaemon|vendor/bin/tzts_daemon)
+            echo "Patching ${1} to use libuuid_vendor.so"
+            "${PATCHELF}" --replace-needed "libuuid.so" "libuuid_vendor.so" "${2}"
+            ;;
     esac
 }
 
