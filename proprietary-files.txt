@@ -58,7 +58,6 @@ vendor/lib/soundfx/libmyspace.so
 vendor/lib/soundfx/libsamsungSoundbooster_plus.so
 vendor/lib/soundfx/libswdap.so
 vendor/lib/soundfx/libswspatializer.so
-vendor/lib/audiopolicy-types-aidl-cpp.so
 vendor/lib/lib_SoundAlive_3DPosition_ver202.so
 vendor/lib/lib_SoundAlive_AlbumArt_ver105.so
 vendor/lib/lib_SoundAlive_play_plus_ver600.so
@@ -77,7 +76,6 @@ vendor/lib64/soundfx/libmyspace.so
 vendor/lib64/soundfx/libsamsungSoundbooster_plus.so
 vendor/lib64/soundfx/libswdap.so
 vendor/lib64/soundfx/libswspatializer.so
-vendor/lib64/audiopolicy-types-aidl-cpp.so
 vendor/lib64/lib_SoundAlive_3DPosition_ver202.so
 vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so
 vendor/lib64/lib_SoundAlive_play_plus_ver600.so
@@ -272,12 +270,10 @@ vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so
 # Bluetooth (A2DP)
 vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib/hw/android.hardware.bluetooth.audio@2.1-impl.so
-vendor/lib/hw/audio.bluetooth.default.so
 vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
 vendor/lib/android.hardware.bluetooth.audio-impl.so
 vendor/lib/libbluetooth_audio_session.so
-vendor/lib/libbluetooth_audio_session_aidl.so
 vendor/lib/libbluetooth_audio_session_aidl_mediatek.so
 vendor/lib/libbluetooth_audio_session_mediatek.so
 vendor/lib/libsehbluetooth_audio_session_aidl.so
@@ -288,11 +284,9 @@ vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 vendor/lib/vendor.samsung.hardware.bluetooth.audio-V1-ndk.so
 vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib64/hw/android.hardware.bluetooth.audio@2.1-impl.so
-vendor/lib64/hw/audio.bluetooth.default.so
 vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
 vendor/lib64/libbluetooth_audio_session.so
-vendor/lib64/libbluetooth_audio_session_aidl.so
 vendor/lib64/libbluetooth_audio_session_mediatek.so
 vendor/lib64/libsehbluetooth_audio_session_aidl.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so
@@ -1241,7 +1235,6 @@ vendor/lib64/hw/local_time.default.so
 
 # Media
 etc/seccomp_policy/mediacodec.policy
-lib/graphicbuffersource-aidl-ndk.so
 lib/libdatasource.so
 lib/libdatasource_local_cache.so
 lib/libmedia_codeclist.so
@@ -1249,10 +1242,8 @@ lib/libomafldrm.so
 lib/libstagefright_aidl_bufferpool2.so
 lib/libstagefright_codecbase.so
 lib/libstagefright_framecapture_utils.so
-lib/libstagefright_graphicbuffersource_aidl.so
 lib/libstagefright_httplive_sec.so
 lib/libstagefright_surface_utils.so
-lib64/graphicbuffersource-aidl-ndk.so
 lib64/libdatasource.so
 lib64/libdatasource_local_cache.so
 lib64/libhdcp2.so
@@ -1262,7 +1253,6 @@ lib64/libomafldrm.so
 lib64/libstagefright_aidl_bufferpool2.so
 lib64/libstagefright_codecbase.so
 lib64/libstagefright_framecapture_utils.so
-lib64/libstagefright_graphicbuffersource_aidl.so
 lib64/libstagefright_hdcp.so
 lib64/libstagefright_httplive_sec.so
 lib64/libstagefright_surface_utils.so
@@ -1385,8 +1375,6 @@ vendor/lib/hw/android.hardware.renderscript@1.0-impl.so
 vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so
 
 # Security
-vendor/bin/hw/android.hardware.security.keymint-service
-vendor/etc/init/android.hardware.security.keymint-service.rc
 vendor/lib64/libcppbor_external.so
 vendor/lib64/libkeymaster4_1support.so
 vendor/lib64/libskeymint10device.so
@@ -1442,10 +1430,6 @@ vendor/lib64/hw/vibrator.default.so
 
 # Wi-Fi
 vendor/bin/hw/android.hardware.wifi@1.0-service-lazy
-vendor/bin/hw/hostapd
-vendor/bin/hw/wpa_supplicant
-vendor/bin/hostapd_cli
-vendor/bin/wpa_cli
 vendor/etc/init/android.hardware.wifi.supplicant-service.rc
 vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc
 vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
