@@ -279,9 +279,6 @@ lib64/libarcsoft_photoeditor.arcsoft.so
 system_ext/lib/vendor.mediatek.hardware.camera.isphal@1.0.so:vendor/lib/vendor.mediatek.hardware.camera.isphal@1.0.so
 vendor/lib/hw/camera.unihal.default.so
 vendor/lib/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so
-vendor/lib/camera.device@3.2-impl.so
-vendor/lib/camera.device@3.3-impl.so
-vendor/lib/camera.device@3.4-impl.so
 vendor/lib/gc02m2_mipi_raw_IdxMgr.so
 vendor/lib/gc13a0_mipi_raw_IdxMgr.so
 vendor/lib/hi5022q_mipi_raw_IdxMgr.so
@@ -579,11 +576,6 @@ vendor/lib64/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so
-vendor/lib64/camera.device@1.0-impl.so
-vendor/lib64/camera.device@3.2-impl.so
-vendor/lib64/camera.device@3.3-impl.so
-vendor/lib64/camera.device@3.4-impl.so
-vendor/lib64/camera.device@3.5-impl.so
 vendor/lib64/gc02m2_mipi_raw_IdxMgr.so
 vendor/lib64/gc13a0_mipi_raw_IdxMgr.so
 vendor/lib64/hi5022q_mipi_raw_IdxMgr.so
@@ -1186,7 +1178,6 @@ vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc
 vendor/etc/seccomp_policy/mediacodec.policy
 vendor/lib/libFrucSSMLib.so
-vendor/lib/libcamera2ndk_vendor.so
 vendor/lib/libcodec2_mtk_c2store.so
 vendor/lib/libcodec2_mtk_vdec.so
 vendor/lib/libcodec2_mtk_venc.so
@@ -1200,7 +1191,6 @@ vendor/lib/libstagefright_bufferqueue_helper_vendor.so
 vendor/lib/libstagefright_foundation_vendor.so
 vendor/lib/libstagefright_omx_vendor.so
 vendor/lib/vintf-codecsolution-V2-ndk.so
-vendor/lib64/libcamera2ndk_vendor.so
 vendor/lib64/libcodec2_mtk_c2store.so
 vendor/lib64/libcodec2_mtk_vdec.so
 vendor/lib64/libcodec2_mtk_venc.so
