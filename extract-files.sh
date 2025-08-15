@@ -80,6 +80,11 @@ function blob_fixup() {
             echo "Patching ${1} to use libhyper_vendor.so"
             "${PATCHELF}" --replace-needed "libhyper.so" "libhyper_vendor.so" "${2}"
             ;;
+
+        vendor/lib*/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so | vendor/lib*/vendor.samsung.hardware.bluetooth.audio-V1-ndk.so)
+            echo "Patching ${1} to use modern audio.common AIDL"
+            "${PATCHELF}" --replace-needed "android.hardware.audio.common-V1-ndk.so" "android.hardware.audio.common-V4-ndk.so" "${2}"
+            ;;
     esac
 }
 
