@@ -135,6 +135,11 @@ function blob_fixup() {
             "${PATCHELF_0_18}" --clear-symbol-version "__aeabi_memset" "${2}"
             "${PATCHELF_0_18}" --clear-symbol-version "__gnu_Unwind_Find_exidx" "${2}"
             ;;
+
+        vendor/lib*/libSecC2ComponentStore.so)
+            echo "Shim: Patching ${1} with libshim_c2"
+            "${PATCHELF}" --add-needed "libshim_c2.so" "${2}"
+            ;;
     esac
 }
 
