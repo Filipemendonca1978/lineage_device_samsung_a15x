@@ -124,7 +124,7 @@ function blob_fixup() {
             "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
             ;;
 
-        vendor/lib/libFace_Landmark_API.camera.samsung.so|vendor/lib/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so|vendor/lib/libSQLiteModule_VER_ALL.so|vendor/lib/lib_SamsungRec_07010.so|vendor/lib/lib_SoundAlive_play_plus_ver600.so|vendor/lib/lib_SoundBooster_ver2000.so|vendor/lib/libegis_fp_normal_sensor_test.so|vendor/lib/libmvpuop_mtk_cv.so|vendor/lib/libmvpuop_mtk_nn.so)
+        vendor/lib/libFace_Landmark_API.camera.samsung.so|vendor/lib/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so|vendor/lib/libSQLiteModule_VER_ALL.so|vendor/lib/lib_SamsungRec_07010.so|vendor/lib/lib_SoundAlive_play_plus_ver600.so|vendor/lib/lib_SoundBooster_ver2000.so|vendor/lib/libegis_fp_normal_sensor_test.so|vendor/lib/libmvpuop_mtk_cv.so|vendor/lib/libmvpuop_mtk_nn.so|vendor/lib/lib3a.ae.so|vendor/lib/lib3a.awb.core.so|vendor/lib/libHEVCdec_sa.ca7.android.so|vendor/lib/libfocuspeaking.so|vendor/lib/libh264dec_sa.ca7.so|vendor/lib/libh264dec_sd.ca7.so|vendor/lib/libh264dec_se.ca7.so|vendor/lib/libsynaFpSensorTestNwd.so|vendor/lib/libvp8enc_sa.ca7.so)
             echo "Shim: Patching ${1} with libshim_idiv0"
             "${PATCHELF}" --add-needed "libshim_idiv0.so" "${2}"
             ;;
