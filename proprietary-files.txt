@@ -7,19 +7,15 @@ vendor/lib/hw/audio.r_submix.mediatek.so
 vendor/lib/hw/audio.r_submix.mt6835.so
 vendor/lib/lib_SamsungRec_07010.so
 vendor/lib/libaedv.so
-vendor/lib/libalsautils.so
 vendor/lib/libaudio-ril.so
 vendor/lib/libaudiotoolkit_vendor.so
 vendor/lib/libbwc.so
 vendor/lib/libfloatingfeature.so
 vendor/lib/libladder.so
-vendor/lib/libmediautils_vendor.so
 vendor/lib/librecordalive.so
 vendor/lib/libsecaudioinfo.so
 vendor/lib/libsecnativefeature.so
 vendor/lib/libsecril-client.so
-vendor/lib/libshmemcompat.so
-vendor/lib/libshmemutil.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
 vendor/lib/vendor.mediatek.hardware.audio@8.1.so
@@ -29,19 +25,15 @@ vendor/lib64/hw/audio.r_submix.mediatek.so
 vendor/lib64/hw/audio.r_submix.mt6835.so
 vendor/lib64/lib_SamsungRec_07010.so
 vendor/lib64/libaedv.so
-vendor/lib64/libalsautils.so
 vendor/lib64/libaudio-ril.so
 vendor/lib64/libaudiotoolkit_vendor.so
 vendor/lib64/libbwc.so
 vendor/lib64/libfloatingfeature.so
 vendor/lib64/libladder.so
-vendor/lib64/libmediautils_vendor.so
 vendor/lib64/librecordalive.so
 vendor/lib64/libsecaudioinfo.so
 vendor/lib64/libsecnativefeature.so
 vendor/lib64/libsecril-client.so
-vendor/lib64/libshmemcompat.so
-vendor/lib64/libshmemutil.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
 vendor/lib64/vendor.mediatek.hardware.audio@8.1.so
@@ -63,8 +55,6 @@ vendor/lib/lib_SoundBooster_ver2000.so
 vendor/lib/libprofileparamstorage.so
 vendor/lib/libsecaudiocoreutils.so
 vendor/lib/libspatializerparamstorage.so
-vendor/lib/libvibrator.so
-vendor/lib/spatializer-aidl-cpp.so
 vendor/lib64/soundfx/libaudioeffectoffload.so
 vendor/lib64/soundfx/libaudiopreprocessing_mtk.so
 vendor/lib64/soundfx/libaudiosaplus_sec.so
@@ -81,13 +71,8 @@ vendor/lib64/lib_SoundBooster_ver2000.so
 vendor/lib64/libprofileparamstorage.so
 vendor/lib64/libsecaudiocoreutils.so
 vendor/lib64/libspatializerparamstorage.so
-vendor/lib64/libvibrator.so
-vendor/lib64/spatializer-aidl-cpp.so
 
 # Audio configs
-etc/audio_effects.conf
-etc/audio_effects.xml
-etc/audio_effects_common.conf
 system_ext/etc/a2dp_audio_policy_configuration.xml
 system_ext/etc/a2dp_in_audio_policy_configuration.xml
 system_ext/etc/audio_policy_configuration_bluetooth_legacy_hal.xml
@@ -562,7 +547,6 @@ vendor/lib/libcameracustom.so
 vendor/lib/libdpframework.so
 vendor/lib/libged.so
 vendor/lib/libgralloc_extra.so
-vendor/lib/libgrallocusage.so
 vendor/lib/libgz_uree.so
 vendor/lib/libion_mtk.so
 vendor/lib/libion_ulit.so
@@ -955,7 +939,6 @@ vendor/lib64/libfeature_rss.so
 vendor/lib64/libfeatureiodrv_mem.so
 vendor/lib64/libged.so
 vendor/lib64/libgralloc_extra.so
-vendor/lib64/libgrallocusage.so
 vendor/lib64/libgz_uree.so
 vendor/lib64/libheichal.so
 vendor/lib64/libimagebuffer_wrapper.so
@@ -1051,27 +1034,13 @@ vendor/lib64/vendor.mediatek.hardware.power@1.1.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 vendor/lib64/vendor.mediatek.hardware.pq_aidl-V1-ndk.so
 
-# CAS
-vendor/bin/hw/android.hardware.cas@1.2-service-lazy
-vendor/etc/init/android.hardware.cas@1.2-service-lazy.rc
-vendor/etc/vintf/manifest/android.hardware.cas@1.2-service-lazy.xml
-
 # Display
 system_ext/lib64/vendor.mediatek.hardware.composer_ext-V1-ndk.so
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek.mt6835
-vendor/bin/hw/android.hardware.graphics.composer@2.1-service
-vendor/bin/hw/android.hardware.graphics.composer@2.3-service
-vendor/bin/hw/android.hardware.graphics.composer@2.4-service
-vendor/bin/hw/android.hardware.graphics.composer@3.1-service
 vendor/bin/hw/android.hardware.memtrack-service.mediatek
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.7-service
 vendor/bin/hw/vendor.mediatek.hardware.pq_aidl-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
-vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc
-vendor/etc/init/android.hardware.graphics.composer@2.2-service.rc
-vendor/etc/init/android.hardware.graphics.composer@2.3-service.rc
-vendor/etc/init/android.hardware.graphics.composer@2.4-service.rc
-vendor/etc/init/android.hardware.graphics.composer@3.1-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mms@1.7-service.rc
 vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc
 vendor/lib/egl/egl.cfg
@@ -1194,12 +1163,7 @@ vendor/lib64/liboemcrypto.so
 vendor/lib64/libteecl.so
 vendor/lib64/libwvaidl.so
 
-# Dumpstate
-vendor/bin/hw/android.hardware.dumpstate-service
-
 # Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service
-vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib/hw/gatekeeper.mt6835.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
@@ -1215,9 +1179,6 @@ vendor/etc/gnss/ca.pem
 vendor/etc/gnss/deleteLogCommands
 vendor/etc/gnss/mnl.prop
 
-# Health
-vendor/etc/init/android.hardware.health-service.example.rc
-
 # Local time
 vendor/lib/hw/local_time.default.so
 vendor/lib64/hw/local_time.default.so
@@ -1225,46 +1186,31 @@ vendor/lib64/hw/local_time.default.so
 # Media
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
-vendor/bin/hw/android.hardware.media.omx@1.0-service
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc
-vendor/etc/init/android.hardware.media.omx@1.0-service.rc
 vendor/etc/seccomp_policy/mediacodec.policy
 vendor/lib/libFrucSSMLib.so
 vendor/lib/libcamera2ndk_vendor.so
-vendor/lib/libcodec2_hidl@1.1.so
-vendor/lib/libcodec2_hidl@1.2.so
-vendor/lib/libcodec2_hidl_plugin.so
 vendor/lib/libcodec2_mtk_c2store.so
 vendor/lib/libcodec2_mtk_vdec.so
 vendor/lib/libcodec2_mtk_venc.so
-vendor/lib/libcodec2_soft_common.so
 vendor/lib/libcodec2_vpp_mi_plugin.so
 vendor/lib/libcodec2_vpp_qt_plugin.so
 vendor/lib/libcodec2_vpp_rs_plugin.so
 vendor/lib/libcodecsolutionhelper_vendor.so
 vendor/lib/libformatter.so
 vendor/lib/libpredeflicker_native.so
-vendor/lib/libsfplugin_ccodec_utils.so
-vendor/lib/libstagefright_bufferpool@2.0.1.so
 vendor/lib/libstagefright_bufferqueue_helper_vendor.so
 vendor/lib/libstagefright_foundation_vendor.so
 vendor/lib/libstagefright_omx_vendor.so
-vendor/lib/libstagefright_softomx_plugin.so
 vendor/lib/vintf-codecsolution-V2-ndk.so
 vendor/lib64/libcamera2ndk_vendor.so
-vendor/lib64/libcodec2_hidl@1.1.so
-vendor/lib64/libcodec2_hidl@1.2.so
-vendor/lib64/libcodec2_hidl_plugin.so
 vendor/lib64/libcodec2_mtk_c2store.so
 vendor/lib64/libcodec2_mtk_vdec.so
 vendor/lib64/libcodec2_mtk_venc.so
-vendor/lib64/libcodec2_soft_common.so
 vendor/lib64/libcodec2_vpp_mi_plugin.so
 vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libformatter.so
-vendor/lib64/libsfplugin_ccodec_utils.so
-vendor/lib64/libstagefright_bufferpool@2.0.1.so
 vendor/lib64/libstagefright_foundation_vendor.so
 
 # Media (Dolby)
@@ -1297,7 +1243,6 @@ vendor/lib64/nfc_nci_nxpsn.so
 vendor/lib64/vendor.samsung.hardware.nfc@2.0.so
 
 # NFC configs
-etc/libnfc-nci.conf
 vendor/etc/nfc/libnfc-nxp_RF.conf
 vendor/etc/libnfc-nxp.conf
 
@@ -1342,16 +1287,11 @@ vendor/lib/hw/android.hardware.renderscript@1.0-impl.so
 vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so
 
 # Security
-vendor/lib64/libcppbor_external.so
-vendor/lib64/libkeymaster4_1support.so
 vendor/lib64/libskeymint10device.so
 vendor/lib64/libskeymint_cli.so
 vendor/lib64/vendor.samsung.hardware.keymint-V2-ndk.so
 
 # Sensors
-vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
-vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc
-vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml
 vendor/lib/sensors.grip.so
 vendor/lib/sensors.inputvirtual.so
 vendor/lib/sensors.sensorhub.so
@@ -1453,7 +1393,6 @@ vendor/bin/add.tflite
 vendor/bin/aee_aedv64_v2
 vendor/bin/aee_dumpstatev_v2
 vendor/bin/aeev_v2
-vendor/bin/applypatch
 vendor/bin/audiocmdservice_atci
 vendor/bin/autobt
 vendor/bin/bip_ap
@@ -1467,13 +1406,10 @@ vendor/bin/chipinfo
 vendor/bin/conninfra_loader
 vendor/bin/dconfig
 vendor/bin/dexecutor
-vendor/bin/dmabuf_dump
 vendor/bin/dmc_core
 vendor/bin/doeapp-memtester
 vendor/bin/doeapp-sat
-vendor/bin/dtc_vendor
 vendor/bin/dumpfaultd.mt6835
-vendor/bin/dumpsys
 vendor/bin/eara_io_service
 vendor/bin/emservice
 vendor/bin/factory
@@ -1548,12 +1484,10 @@ vendor/etc/hyper/config_vendor.json
 vendor/etc/init/aee_aedv64_v2.rc
 vendor/etc/init/audiocmdservice_atci.rc
 vendor/etc/init/bootperf.rc
-vendor/etc/init/boringssl_self_test.rc
 vendor/etc/init/camera.unihal.rc
 vendor/etc/init/cass.rc
 vendor/etc/init/chipinfo_init.rc
 vendor/etc/init/dmc_core.rc
-vendor/etc/init/dumpstate-default.rc
 vendor/etc/init/eara-io-service.rc
 vendor/etc/init/emservice.rc
 vendor/etc/init/face-default-sec.rc
@@ -1563,7 +1497,6 @@ vendor/etc/init/fuelgauged_init.rc
 vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/etc/init/gbe.rc
 vendor/etc/init/hermesd.rc
-vendor/etc/init/hostapd.android.rc
 vendor/etc/init/hyper-default-sec.rc
 vendor/etc/init/init.a15x.rc
 vendor/etc/init/init.bip_ap.rc
@@ -1632,8 +1565,6 @@ vendor/etc/init/vendor.samsung.hardware.tlc.payment@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.vibrator-default.rc
 vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc
 vendor/etc/init/vendor.samsung.rilchip.mediatek.rc
-vendor/etc/init/vendor_flash_recovery.rc
-vendor/etc/init/vndservicemanager.rc
 vendor/etc/init/volte_clientapi_ua.rc
 vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_mtk.rc
@@ -1652,139 +1583,12 @@ vendor/etc/saiv/gae/PmGenModel.bin
 vendor/etc/saiv/gae/PmGenderFeatSelIdx.bin
 vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy
 vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy
-vendor/etc/seccomp_policy/mediaextractor.policy
 vendor/etc/seccomp_policy/mediaextractor_sec.policy
-vendor/etc/seccomp_policy/mediaswcodec.policy
 vendor/etc/seccomp_policy/samsung.software.media.c2-base-policy
 vendor/etc/seccomp_policy/samsung.software.media.c2-ext-policy
 vendor/etc/secnvm/k250a_41000001_1.img
 vendor/etc/secnvm/k250a_41000003_0.img
 vendor/etc/secnvm/k250a_41000005_c.img
-vendor/etc/security/cacerts/01419da9.0
-vendor/etc/security/cacerts/04f60c28.0
-vendor/etc/security/cacerts/0d69c7e1.0
-vendor/etc/security/cacerts/10531352.0
-vendor/etc/security/cacerts/111e6273.0
-vendor/etc/security/cacerts/12d55845.0
-vendor/etc/security/cacerts/1ae85e5e.0
-vendor/etc/security/cacerts/1df5a75f.0
-vendor/etc/security/cacerts/1e1eab7c.0
-vendor/etc/security/cacerts/1e8e7201.0
-vendor/etc/security/cacerts/1eb37bdf.0
-vendor/etc/security/cacerts/1f58a078.0
-vendor/etc/security/cacerts/219d9499.0
-vendor/etc/security/cacerts/23f4c490.0
-vendor/etc/security/cacerts/27af790d.0
-vendor/etc/security/cacerts/2add47b6.0
-vendor/etc/security/cacerts/2d9dafe4.0
-vendor/etc/security/cacerts/2fa87019.0
-vendor/etc/security/cacerts/302904dd.0
-vendor/etc/security/cacerts/304d27c3.0
-vendor/etc/security/cacerts/31188b5e.0
-vendor/etc/security/cacerts/33ee480d.0
-vendor/etc/security/cacerts/343eb6cb.0
-vendor/etc/security/cacerts/35105088.0
-vendor/etc/security/cacerts/399e7759.0
-vendor/etc/security/cacerts/3ad48a91.0
-vendor/etc/security/cacerts/3c6676aa.0
-vendor/etc/security/cacerts/3c860d51.0
-vendor/etc/security/cacerts/3c899c73.0
-vendor/etc/security/cacerts/3c9a4d3b.0
-vendor/etc/security/cacerts/3e7271e8.0
-vendor/etc/security/cacerts/40dc992e.0
-vendor/etc/security/cacerts/455f1b52.0
-vendor/etc/security/cacerts/48a195d8.0
-vendor/etc/security/cacerts/4be590e0.0
-vendor/etc/security/cacerts/5046c355.0
-vendor/etc/security/cacerts/524d9b43.0
-vendor/etc/security/cacerts/52b525c7.0
-vendor/etc/security/cacerts/583d0756.0
-vendor/etc/security/cacerts/5a250ea7.0
-vendor/etc/security/cacerts/5a3f0ff8.0
-vendor/etc/security/cacerts/5acf816d.0
-vendor/etc/security/cacerts/5cf9d536.0
-vendor/etc/security/cacerts/5f47b495.0
-vendor/etc/security/cacerts/60afe812.0
-vendor/etc/security/cacerts/6187b673.0
-vendor/etc/security/cacerts/63a2c897.0
-vendor/etc/security/cacerts/69105f4f.0
-vendor/etc/security/cacerts/6b03dec0.0
-vendor/etc/security/cacerts/75680d2e.0
-vendor/etc/security/cacerts/76579174.0
-vendor/etc/security/cacerts/7892ad52.0
-vendor/etc/security/cacerts/7a7c655d.0
-vendor/etc/security/cacerts/7a819ef2.0
-vendor/etc/security/cacerts/81b9768f.0
-vendor/etc/security/cacerts/82223c44.0
-vendor/etc/security/cacerts/83e9984f.0
-vendor/etc/security/cacerts/85cde254.0
-vendor/etc/security/cacerts/86212b19.0
-vendor/etc/security/cacerts/869fbf79.0
-vendor/etc/security/cacerts/882de061.0
-vendor/etc/security/cacerts/88950faa.0
-vendor/etc/security/cacerts/89c02a45.0
-vendor/etc/security/cacerts/8d6437c3.0
-vendor/etc/security/cacerts/9282e51c.0
-vendor/etc/security/cacerts/9339512a.0
-vendor/etc/security/cacerts/9479c8c3.0
-vendor/etc/security/cacerts/9576d26b.0
-vendor/etc/security/cacerts/9591a472.0
-vendor/etc/security/cacerts/95aff9e3.0
-vendor/etc/security/cacerts/9685a493.0
-vendor/etc/security/cacerts/985c1f52.0
-vendor/etc/security/cacerts/9aef356c.0
-vendor/etc/security/cacerts/9d6523ce.0
-vendor/etc/security/cacerts/9f533518.0
-vendor/etc/security/cacerts/a2c66da8.0
-vendor/etc/security/cacerts/a3896b44.0
-vendor/etc/security/cacerts/a7605362.0
-vendor/etc/security/cacerts/a81e292b.0
-vendor/etc/security/cacerts/a9d40e02.0
-vendor/etc/security/cacerts/ab5346f4.0
-vendor/etc/security/cacerts/ab59055e.0
-vendor/etc/security/cacerts/aeb67534.0
-vendor/etc/security/cacerts/b0ed035a.0
-vendor/etc/security/cacerts/b0f3e76e.0
-vendor/etc/security/cacerts/b3fb433b.0
-vendor/etc/security/cacerts/b74d2bd5.0
-vendor/etc/security/cacerts/b7db1890.0
-vendor/etc/security/cacerts/b872f2b4.0
-vendor/etc/security/cacerts/b936d1c6.0
-vendor/etc/security/cacerts/bc3f2570.0
-vendor/etc/security/cacerts/bd43e1dd.0
-vendor/etc/security/cacerts/bdacca6f.0
-vendor/etc/security/cacerts/bf64f35b.0
-vendor/etc/security/cacerts/c491639e.0
-vendor/etc/security/cacerts/c51c224c.0
-vendor/etc/security/cacerts/c559d742.0
-vendor/etc/security/cacerts/c90bc37d.0
-vendor/etc/security/cacerts/cb1c3204.0
-vendor/etc/security/cacerts/ccc52f49.0
-vendor/etc/security/cacerts/cf701eeb.0
-vendor/etc/security/cacerts/d06393bb.0
-vendor/etc/security/cacerts/d16a5865.0
-vendor/etc/security/cacerts/d18e9066.0
-vendor/etc/security/cacerts/d39b0a2c.0
-vendor/etc/security/cacerts/d41b5e2a.0
-vendor/etc/security/cacerts/d4c339cb.0
-vendor/etc/security/cacerts/d59297b8.0
-vendor/etc/security/cacerts/d7746a63.0
-vendor/etc/security/cacerts/da7377f6.0
-vendor/etc/security/cacerts/dbc54cab.0
-vendor/etc/security/cacerts/dbff3a01.0
-vendor/etc/security/cacerts/dc99f41e.0
-vendor/etc/security/cacerts/dfc0fe80.0
-vendor/etc/security/cacerts/e442e424.0
-vendor/etc/security/cacerts/e48193cf.0
-vendor/etc/security/cacerts/e8651083.0
-vendor/etc/security/cacerts/ed39abd0.0
-vendor/etc/security/cacerts/edcbddb5.0
-vendor/etc/security/cacerts/f013ecaf.0
-vendor/etc/security/cacerts/f0cd152c.0
-vendor/etc/security/cacerts/f459871d.0
-vendor/etc/security/cacerts/fb5fa911.0
-vendor/etc/security/cacerts/fd08c599.0
-vendor/etc/security/cacerts/fde84897.0
 vendor/etc/str/str_preference_data.dat
 vendor/etc/sysconfig/vendor-apex-allowlist.xml
 vendor/etc/tp_mfnr/IQParam.bin
@@ -1851,7 +1655,6 @@ vendor/etc/ecc_list_OP236.xml
 vendor/etc/ecc_list_preference.xml
 vendor/etc/factory.ini
 vendor/etc/floating_feature.xml
-vendor/etc/fstab.emmc
 vendor/etc/fstab.enableswap
 vendor/etc/fstab.mt6835
 vendor/etc/fstab.ramplus
@@ -1859,12 +1662,10 @@ vendor/etc/fstb.cfg
 vendor/etc/gbe.cfg
 vendor/etc/hqm_device.xml
 vendor/etc/init.insmod.mt6835.cfg
-vendor/etc/linker.config.pb
 vendor/etc/mali_platform.config
 vendor/etc/meow.cfg
 vendor/etc/mercury.json
 vendor/etc/mercury_hv.json
-vendor/etc/mkshrc
 vendor/etc/mtk_platform_codecs_config.xml
 vendor/etc/mtk_vext_info
 vendor/etc/mtu-conf.xml
@@ -1880,7 +1681,6 @@ vendor/etc/plmn_delta_usagsm.bin
 vendor/etc/plmn_se13_prebuilt.bin
 vendor/etc/powercontable.xml
 vendor/etc/powerscntbl.xml
-vendor/etc/public.libraries.txt
 vendor/etc/qt.cfg
 vendor/etc/sec_audio_volume_curve.xml
 vendor/etc/smsdbvisitor.xml
@@ -1937,8 +1737,6 @@ vendor/firmware/wlan-connection-roaming-backup
 vendor/firmware/wlan-connection-roaming.ini
 vendor/firmware/zt7650m_a15x.bin
 vendor/lib/hw/audio.sec_primary.default.so
-vendor/lib/hw/audio_policy.stub.so
-vendor/lib/hw/thermal_hal.so
 vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
 vendor/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so
 vendor/lib/arm.graphics-V2-ndk.so
@@ -2005,7 +1803,6 @@ vendor/lib/libcares_naptr.so
 vendor/lib/libccci_util.so
 vendor/lib/libcmdl.so
 vendor/lib/libcmdl_ndk.mtk.vndk.so
-vendor/lib/libcodec2_simple_component.so
 vendor/lib/libconnfem.so
 vendor/lib/libcustom_nvram.so
 vendor/lib/libcvsd_mtk.so
@@ -2018,7 +1815,6 @@ vendor/lib/libface_landmark.arcsoft.so
 vendor/lib/libfgauge_gm30.so
 vendor/lib/libfidoauthnr_v2.so
 vendor/lib/libfile_op.so
-vendor/lib/libflatbuffers-cpp.so
 vendor/lib/libfocuspeaking.so
 vendor/lib/libfocuspeaking.uniplugin@1.0.so
 vendor/lib/libformatConverter.unifunc.so
@@ -2104,7 +1900,6 @@ vendor/lib/librcs_volte_core.so
 vendor/lib/librgbwlightsensor.so
 vendor/lib/librpc.so
 vendor/lib/librt_extamp_intf.so
-vendor/lib/libruy.so
 vendor/lib/libsavsac.so
 vendor/lib/libsavscmn.so
 vendor/lib/libsavsvc.so
@@ -2149,9 +1944,7 @@ vendor/lib/libvp8enc_sa.ca7.so
 vendor/lib/libvp9dec_sa.ca7.so
 vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
-vendor/lib/libvpx.so
 vendor/lib/libwapi.so
-vendor/lib/libwpa_client.so
 vendor/lib/s5kjn1_mipi_raw_tuning.so
 vendor/lib/sc501cs_mipi_raw_tuning.so
 vendor/lib/unihal_filter_unit.so
@@ -2178,9 +1971,7 @@ vendor/lib/vendor.samsung.hardware.hyper-V2-ndk.so
 vendor/lib/vendor.samsung.hardware.tlc.payment@1.0-impl.so
 vendor/lib/vendor.samsung.hardware.tlc.payment@1.0.so
 vendor/lib64/hw/audio.sec_primary.default.so
-vendor/lib64/hw/audio_policy.stub.so
 vendor/lib64/hw/libsecaudiohal_aidl.so
-vendor/lib64/hw/thermal_hal.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.ccap@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
 vendor/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so
@@ -2260,7 +2051,6 @@ vendor/lib64/libaurisysaps.so
 vendor/lib64/libaurisysdemo.so
 vendor/lib64/libbeautyshot.arcsoft.so
 vendor/lib64/libbessound_hd_mtk_vendor.so
-vendor/lib64/libbinderdebug.so
 vendor/lib64/libblisrc32_vendor.so
 vendor/lib64/libbluetooth_hw_test.so
 vendor/lib64/libbluetooth_mtk_pure.so
@@ -2287,13 +2077,11 @@ vendor/lib64/libcodec2_sec_mp3dec.so
 vendor/lib64/libcodec2_sec_mp4vdec.so
 vendor/lib64/libcodec2_sec_soft_common.so
 vendor/lib64/libcodec2_sec_vc1dec.so
-vendor/lib64/libcodec2_simple_component.so
 vendor/lib64/libcodec2_soft_ac4dec.so
 vendor/lib64/libcodec2_soft_eac3dec.so
 vendor/lib64/libcodec2_vpp_AIMEMC_plugin.so
 vendor/lib64/libcodec2_vpp_AISR_plugin.so
 vendor/lib64/libconnfem.so
-vendor/lib64/libcppcose_rkp.so
 vendor/lib64/libcustom_nvram.so
 vendor/lib64/libcvsd_mtk.so
 vendor/lib64/libdecrypt.so
@@ -2315,7 +2103,6 @@ vendor/lib64/libfft_vendor.so
 vendor/lib64/libfgauge_gm30.so
 vendor/lib64/libfidoauthnr_v2.so
 vendor/lib64/libfile_op.so
-vendor/lib64/libflatbuffers-cpp.so
 vendor/lib64/libfocuspeaking.so
 vendor/lib64/libfocuspeaking.uniplugin@1.0.so
 vendor/lib64/libforkexecwrap.so
@@ -2423,7 +2210,6 @@ vendor/lib64/librmsclib1.so
 vendor/lib64/librpc.so
 vendor/lib64/librt_extamp_intf.so
 vendor/lib64/librtts_client.so
-vendor/lib64/libruy.so
 vendor/lib64/libsavsac.so
 vendor/lib64/libsavscmn.so
 vendor/lib64/libsavsvc.so
@@ -2448,7 +2234,6 @@ vendor/lib64/libsnap_compute_wrapper.so
 vendor/lib64/libsnap_vndk.so
 vendor/lib64/libsnaplite_native.so
 vendor/lib64/libsnaplite_wrapper.so
-vendor/lib64/libsoft_attestation_cert.so
 vendor/lib64/libsomxcmn.so
 vendor/lib64/libspeakercalibration.so
 vendor/lib64/libspeech_enh_lib.so
@@ -2484,8 +2269,6 @@ vendor/lib64/libvkservice.so
 vendor/lib64/libvpu.so
 vendor/lib64/libvpu5.so
 vendor/lib64/libwapi.so
-vendor/lib64/libwpa_client.so
-vendor/lib64/libz_stable.so
 vendor/lib64/s5kjn1_mipi_raw_tuning.so
 vendor/lib64/sc501cs_mipi_raw_tuning.so
 vendor/lib64/unihal_filter_unit.so
