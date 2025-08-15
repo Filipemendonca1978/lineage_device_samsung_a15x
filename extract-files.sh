@@ -107,6 +107,11 @@ function blob_fixup() {
             echo "Shim: Patching ${1} with libshim_idiv0"
             "${PATCHELF}" --add-needed "libshim_idiv0.so" "${2}"
             ;;
+
+        vendor/lib*/unihal_android.so)
+            echo "Shim: Patching ${1} with libui_shim"
+            "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
+            ;;
     esac
 }
 
