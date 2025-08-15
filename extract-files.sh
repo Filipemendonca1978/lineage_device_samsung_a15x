@@ -90,6 +90,11 @@ function blob_fixup() {
             echo "Shim: Patching ${1} with libbase_shim"
             "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
             ;;
+
+        vendor/lib*/lib3a.ae.stat.so)
+            echo "Patching ${1} to add missing liblog dependency"
+            "${PATCHELF}" --add-needed "liblog.so" "${2}"
+            ;;
     esac
 }
 
