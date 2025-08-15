@@ -107,6 +107,17 @@ function blob_fixup() {
             echo "Shim: Patching ${1} with libui_shim"
             "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
             ;;
+
+        vendor/lib*/libneuralnetworks_sl_driver_mtk_prebuilt.so)
+            echo "ABI Patch: Clearing private symbol versions in ${1}"
+            "${PATCHELF_0_18}" --clear-symbol-version "AHardwareBuffer_allocate" "${2}"
+            "${PATCHELF_0_18}" --clear-symbol-version "AHardwareBuffer_createFromHandle" "${2}"
+            "${PATCHELF_0_18}" --clear-symbol-version "AHardwareBuffer_describe" "${2}"
+            "${PATCHELF_0_18}" --clear-symbol-version "AHardwareBuffer_getNativeHandle" "${2}"
+            "${PATCHELF_0_18}" --clear-symbol-version "AHardwareBuffer_lock" "${2}"
+            "${PATCHELF_0_18}" --clear-symbol-version "AHardwareBuffer_release" "${2}"
+            "${PATCHELF_0_18}" --clear-symbol-version "AHardwareBuffer_unlock" "${2}"
+            ;;
     esac
 }
 
