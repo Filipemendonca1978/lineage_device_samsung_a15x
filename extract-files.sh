@@ -85,6 +85,11 @@ function blob_fixup() {
             echo "Patching ${1} to use modern audio.common AIDL"
             "${PATCHELF}" --replace-needed "android.hardware.audio.common-V1-ndk.so" "android.hardware.audio.common-V4-ndk.so" "${2}"
             ;;
+
+        vendor/lib*/libneuralnetworks_sl_driver_mtk_prebuilt.so|vendor/lib*/libnvram.so|vendor/lib*/libtflite_mtk.so|vendor/bin/factory|vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk|vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk-lazy|vendor/bin/hw/vendor.samsung.hardware.health-service|vendor/lib64/nfc_nci_nxpsn.so)
+            echo "Shim: Patching ${1} with libbase_shim"
+            "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
+            ;;
     esac
 }
 
