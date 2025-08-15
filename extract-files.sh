@@ -95,6 +95,13 @@ function blob_fixup() {
             echo "Patching ${1} to add missing liblog dependency"
             "${PATCHELF}" --add-needed "liblog.so" "${2}"
             ;;
+
+        vendor/lib*/libh264enc_sa.ca7.so|vendor/lib*/libmp4enc_sa.ca7.so|vendor/lib*/libmp4enc_xa.ca7.so|vendor/lib*/libthha.so|vendor/lib*/libvcodec_oal.so|vendor/lib*/libvp8dec_sa.ca7.so|vendor/lib*/libvp9dec_sa.ca7.so)
+            echo "ABI Patch: Clearing private symbol versions in ${1}"
+            "${PATCHELF_0_18}" --clear-symbol-version "__aeabi_memcpy" "${2}"
+            "${PATCHELF_0_18}" --clear-symbol-version "__aeabi_memset" "${2}"
+            "${PATCHELF_0_18}" --clear-symbol-version "__gnu_Unwind_Find_exidx" "${2}"
+            ;;
     esac
 }
 
