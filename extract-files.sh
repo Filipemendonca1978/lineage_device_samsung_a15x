@@ -55,11 +55,6 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        vendor/lib*/android.hardware.bluetooth.audio-impl.so)
-            echo "Patching ${1} for BT audio AIDL version"
-            "${PATCHELF}" --replace-needed "android.hardware.bluetooth.audio-V2-ndk.so" "android.hardware.bluetooth.audio-V5-ndk.so" "${2}"
-            ;;
-
         vendor/lib*/vendor.mediatek.hardware.pq_aidl-V1-ndk.so)
             echo "Patching ${1} for graphics.common AIDL version"
             "${PATCHELF}" --replace-needed "android.hardware.graphics.common-V3-ndk.so" "android.hardware.graphics.common-V6-ndk.so" "${2}"
