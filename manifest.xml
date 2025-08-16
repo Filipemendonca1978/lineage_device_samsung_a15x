@@ -21,6 +21,7 @@
     </hal>
     <hal format="aidl">
         <name>android.hardware.gnss</name>
+        <version>2</version>
         <fqname>IGnss/default</fqname>
     </hal>
     <hal format="hidl">
