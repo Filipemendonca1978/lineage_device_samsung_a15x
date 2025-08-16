@@ -1742,7 +1742,7 @@ vendor/lib/libMtkSpeechEnh.so
 vendor/lib/libOpenCL.so
 vendor/lib/libOpenCv.camera.samsung.so
 vendor/lib/libSEF.quram.so
-vendor/lib/libTEECommon.so
+vendor/lib/libTEECommon.so;FIX_SONAME
 vendor/lib/lib_iir.so
 vendor/lib/libaal_cust.so
 vendor/lib/libaal_cust_func.so
@@ -1982,7 +1982,7 @@ vendor/lib64/libOpenCL.so
 vendor/lib64/libOpenCv.camera.samsung.so
 vendor/lib64/libSEF.quram.so
 vendor/lib64/libSecC2ComponentStore.so
-vendor/lib64/libTEECommon.so
+vendor/lib64/libTEECommon.so;FIX_SONAME
 vendor/lib64/libVendorSemDataProps.so
 vendor/lib64/libVendorSemTelephonyProps.so
 vendor/lib64/libVkLayer_mtk_rt_sdk.so
