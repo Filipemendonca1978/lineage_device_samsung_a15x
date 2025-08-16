@@ -4,9 +4,9 @@
 vendor/bin/hw/android.hardware.audio.service.mediatek
 vendor/etc/init/android.hardware.audio.service.mediatek.rc
 vendor/lib/hw/audio.primary.mediatek.so
-vendor/lib/hw/audio.primary.mt6835.so
+vendor/lib/hw/audio.primary.mt6835.so;FIX_SONAME
 vendor/lib/hw/audio.r_submix.mediatek.so
-vendor/lib/hw/audio.r_submix.mt6835.so
+vendor/lib/hw/audio.r_submix.mt6835.so;FIX_SONAME
 vendor/lib/lib_SamsungRec_07010.so
 vendor/lib/libaedv.so
 vendor/lib/libaudio-ril.so
@@ -22,9 +22,9 @@ vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
 vendor/lib/vendor.mediatek.hardware.audio@8.1.so
 vendor/lib64/hw/audio.primary.mediatek.so
-vendor/lib64/hw/audio.primary.mt6835.so
+vendor/lib64/hw/audio.primary.mt6835.so;FIX_SONAME
 vendor/lib64/hw/audio.r_submix.mediatek.so
-vendor/lib64/hw/audio.r_submix.mt6835.so
+vendor/lib64/hw/audio.r_submix.mt6835.so;FIX_SONAME
 vendor/lib64/lib_SamsungRec_07010.so
 vendor/lib64/libaedv.so
 vendor/lib64/libaudio-ril.so
