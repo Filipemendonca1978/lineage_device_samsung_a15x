@@ -26,6 +26,10 @@ PRODUCT_PACKAGES += \
     audioclient-types-aidl-cpp \
     framework-permission-aidl-cpp \
     shared-file-region-aidl-cpp
+
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider-service.samsung
     
 # fastbootd
 PRODUCT_PACKAGES += \

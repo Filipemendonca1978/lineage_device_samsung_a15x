@@ -25,6 +25,11 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 TARGET_BOOTLOADER_BOARD_NAME := a15x
 TARGET_NO_BOOTLOADER := true
 
+# Camera
+SOONG_CONFIG_NAMESPACES += samsungCameraVars
+SOONG_CONFIG_samsungCameraVars += extra_ids
+SOONG_CONFIG_samsungCameraVars_extra_ids :=
+
 # Display
 TARGET_SCREEN_DENSITY := 450
 

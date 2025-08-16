@@ -147,6 +147,11 @@ function blob_fixup() {
             "${PATCHELF}" --add-needed "libshim_crypto.so" "${2}"
             ;;
 
+        vendor/lib*/vendor.samsung.hardware.camera.device@5.0-impl.so)
+            echo "Shim: Patching ${1} with the master camera shim"
+            "${PATCHELF}" --add-needed "libshim_camera.so" "${2}"
+            ;;
+
         vendor/lib64/libril_sem.so)
             echo "Patching ${1} to use vendor.samsung.hardware.radio.network-V1-ndk-vendor"
             "${PATCHELF}" --replace-needed "vendor.samsung.hardware.radio.network-V1-ndk.so" "vendor.samsung.hardware.radio.network-V1-ndk-vendor.so" "${2}"
