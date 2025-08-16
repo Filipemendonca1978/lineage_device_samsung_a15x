@@ -1359,7 +1359,6 @@ vendor/bin/hw/vendor.samsung.hardware.authfw@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.biometrics.face-service
 vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint-service
 vendor/bin/hw/vendor.samsung.hardware.gnss-service
-vendor/bin/hw/vendor.samsung.hardware.health-service
 vendor/bin/hw/vendor.samsung.hardware.hyper-service
 vendor/bin/hw/vendor.samsung.hardware.light-service
 vendor/bin/hw/vendor.samsung.hardware.security.drk@2.0-service
@@ -1527,7 +1526,6 @@ vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
 vendor/etc/init/vendor.samsung.hardware.authfw@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint-service.rc
 vendor/etc/init/vendor.samsung.hardware.gnss-service.rc
-vendor/etc/init/vendor.samsung.hardware.health-service.rc
 vendor/etc/init/vendor.samsung.hardware.security.drk@2.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.security.engmode-service.rc
 vendor/etc/init/vendor.samsung.hardware.security.fkeymaster-service.rc
@@ -1587,7 +1585,6 @@ vendor/etc/vintf/manifest/sec_c2_manifest_default0_1_1.xml
 vendor/etc/vintf/manifest/secaudiohalaidl_manifest.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.authfw@1.0-manifest.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.biometrics.fingerprint-service.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.health-service.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.mediatek.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude_ship.mediatek.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_33.xml
@@ -2282,7 +2279,6 @@ vendor/lib64/vendor.samsung.hardware.biometrics.face-V3-ndk.so
 vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.bluetooth.audio-impl.so
 vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
-vendor/lib64/vendor.samsung.hardware.health-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.hyper-V2-ndk.so
 vendor/lib64/vendor.samsung.hardware.light-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so
