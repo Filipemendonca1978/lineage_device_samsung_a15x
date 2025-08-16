@@ -91,12 +91,6 @@ function blob_fixup() {
             "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
             ;;
 
-        vendor/bin/factory)
-            echo "Patching ${1} for libminui and libbase_shim"
-            "${PATCHELF}" --replace-needed "libminiui.so" "libminui.so" "${2}"
-            "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
-            ;;
-
         vendor/lib*/libneuralnetworks_sl_driver_mtk_prebuilt.so)
             echo "Shim: Patching ${1} with libbase_shim"
             "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"

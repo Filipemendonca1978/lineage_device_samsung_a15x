@@ -1398,7 +1398,6 @@ vendor/bin/doeapp-sat
 vendor/bin/dumpfaultd.mt6835
 vendor/bin/eara_io_service
 vendor/bin/emservice
-vendor/bin/factory
 vendor/bin/fpsgo
 vendor/bin/fsdbg_vendor
 vendor/bin/fuelgauged
@@ -1830,7 +1829,6 @@ vendor/lib/liblivefocus_capture_engine.so
 vendor/lib/liblivefocus_preview.uniplugin@1.0.so
 vendor/lib/liblivefocus_preview_engine.so
 vendor/lib/liblvve.so
-vendor/lib/libminiui.so
 vendor/lib/libmmagent.so
 vendor/lib/libmmlpqImpl.so
 vendor/lib/libmmprofile.so
@@ -1999,7 +1997,6 @@ vendor/lib64/libaaa_ltmx.so
 vendor/lib64/libaal_cust.so
 vendor/lib64/libaal_cust_func.so
 vendor/lib64/libaal_key.so
-vendor/lib64/libacdk.so
 vendor/lib64/libaiawb_moon_model.so
 vendor/lib64/libaiawb_sun_model.so
 vendor/lib64/libaibc_tuning.so
@@ -2123,7 +2120,6 @@ vendor/lib64/liblibarm_mali_config_sysprops.so
 vendor/lib64/liblivefocus_capture_engine.so
 vendor/lib64/liblivefocus_preview.uniplugin@1.0.so
 vendor/lib64/liblivefocus_preview_engine.so
-vendor/lib64/libminiui.so
 vendor/lib64/libmipc.so
 vendor/lib64/libmmagent.so
 vendor/lib64/libmmlpqImpl.so
