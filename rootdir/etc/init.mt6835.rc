@@ -2059,17 +2059,6 @@ service loghidlsysservice /system/bin/loghidlsysservice
     group system
     disabled
 
-# add meta_tst for ATM
-service meta_tst /vendor/bin/meta_tst
-    interface vendor.mediatek.hardware.meta@1.0::IMetaTst MetaATDHidlServer
-    class core
-    user system
-    group radio gps system wifi audio bluetooth media
-    capabilities NET_RAW NET_ADMIN
-    socket meta-atci stream 660 radio system
-    disabled
-    oneshot
-
 service factory_no_image /vendor/bin/factory
     user root
     group radio system wifi media gps audio bluetooth wakelock nfc
