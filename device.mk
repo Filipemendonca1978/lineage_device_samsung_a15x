@@ -97,5 +97,9 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/samsung
 
+# First Stage Ramdisk
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6835:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6835
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/a15x/a15x-vendor.mk)
