@@ -155,6 +155,10 @@ function blob_fixup() {
             echo "Shim: Patching ${1} with aee_aedv shim"
             "${PATCHELF}" --add-needed "aedv64_shim.so" "${2}"
             ;;
+
+        vendor/lib64/hw/hwcomposer.mtk_common.so)
+            echo "Shim: Patching ${1} with libprocessgroup shim"
+            "${PATCHELF}" --add-needed "libprocessgroup_shim.so" "${2}"
     esac
 }
 
