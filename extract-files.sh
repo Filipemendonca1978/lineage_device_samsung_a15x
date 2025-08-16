@@ -156,6 +156,11 @@ function blob_fixup() {
             echo "Patching ${1} to use vendor.samsung.hardware.radio.network-V1-ndk-vendor"
             "${PATCHELF}" --replace-needed "vendor.samsung.hardware.radio.network-V1-ndk.so" "vendor.samsung.hardware.radio.network-V1-ndk-vendor.so" "${2}"
             ;;
+
+        vendor/bin/aee_aedv64_v2)
+            echo "Shim: Patching ${1} with aee_aedv shim"
+            "${PATCHELF}" --add-needed "aedv64_shim.so" "${2}"
+            ;;
     esac
 }
 
