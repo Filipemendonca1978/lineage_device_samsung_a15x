@@ -1867,7 +1867,7 @@ vendor/lib/libneuron_adapter_mgvi.so
 vendor/lib/libneuron_graph_delegate.mtk.so
 vendor/lib/libneuropilot_hal_utils.so
 vendor/lib/libnir_neon_driver.so
-vendor/lib/libnir_neon_driver_ndk.mtk.vndk.so
+vendor/lib/libnir_neon_driver_ndk.mtk.vndk.so;FIX_SONAME
 vendor/lib/libnpagent.so
 vendor/lib/libnxp_extamp_intf.so
 vendor/lib/libpadm.so
@@ -1897,7 +1897,7 @@ vendor/lib/libsnaace.so
 vendor/lib/libsnamrnb.so
 vendor/lib/libsnamrwb.so
 vendor/lib/libspeakercalibration.so
-vendor/lib/libspeech_enh_lib.so
+vendor/lib/libspeech_enh_lib.so;FIX_SONAME
 vendor/lib/libspeechparser_vendor.so
 vendor/lib/libstorage_otp.so
 vendor/lib/libsynaFpSensorTestNwd.so
@@ -2166,10 +2166,10 @@ vendor/lib64/libneuron_adapter_mgvi.so
 vendor/lib64/libneuron_graph_delegate.mtk.so
 vendor/lib64/libneuron_platform.so
 vendor/lib64/libneuron_runtime.6.so
-vendor/lib64/libneuron_runtime_vpp.6.so
+vendor/lib64/libneuron_runtime_vpp.6.so;FIX_SONAME
 vendor/lib64/libneuropilot_hal_utils.so
 vendor/lib64/libnir_neon_driver.so
-vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so
+vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so;FIX_SONAME
 vendor/lib64/libnpagent.so
 vendor/lib64/libnpagent_server.so
 vendor/lib64/libnxp_extamp_intf.so
@@ -2216,7 +2216,7 @@ vendor/lib64/libsnaplite_native.so
 vendor/lib64/libsnaplite_wrapper.so
 vendor/lib64/libsomxcmn.so
 vendor/lib64/libspeakercalibration.so
-vendor/lib64/libspeech_enh_lib.so
+vendor/lib64/libspeech_enh_lib.so;FIX_SONAME
 vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/libstorage_otp.so
 vendor/lib64/libstork_shared.so
