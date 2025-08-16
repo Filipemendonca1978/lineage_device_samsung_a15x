@@ -146,6 +146,11 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-tm.so" "${2}"
             "${PATCHELF}" --add-needed "libshim_crypto.so" "${2}"
             ;;
+
+        vendor/lib64/libril_sem.so)
+            echo "Patching ${1} to use vendor.samsung.hardware.radio.network-V1-ndk-vendor"
+            "${PATCHELF}" --replace-needed "vendor.samsung.hardware.radio.network-V1-ndk.so" "vendor.samsung.hardware.radio.network-V1-ndk-vendor.so" "${2}"
+            ;;
     esac
 }
 

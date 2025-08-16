@@ -1262,7 +1262,7 @@ vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so
-vendor/lib64/vendor.samsung.hardware.radio.network-V1-ndk.so
+vendor/lib64/vendor.samsung.hardware.radio.network-V1-ndk.so:vendor/lib64/vendor.samsung.hardware.radio.network-V1-ndk-vendor.so;FIX_SONAME
 vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so
 
 # Radio (IMS)
@@ -1426,7 +1426,6 @@ vendor/bin/rcs_volte_stack
 vendor/bin/rcs_volte_stack64
 vendor/bin/rt5512_calibration
 vendor/bin/rttv_v2
-vendor/bin/secril_config_svc
 vendor/bin/smartpa_nvtest
 vendor/bin/snap_utility_64
 vendor/bin/snaplite_utility_64

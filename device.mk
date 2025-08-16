@@ -83,9 +83,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_COPY_OUT_RAMDISK)/fstab.emmc
 
+# RIL
+PRODUCT_PACKAGES += \
+    secril_config_svc
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/samsung
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/a15x/a15x-vendor.mk)
