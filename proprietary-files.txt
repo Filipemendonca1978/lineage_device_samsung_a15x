@@ -1403,7 +1403,7 @@ vendor/bin/snap_utility_64
 vendor/bin/snaplite_utility_64
 vendor/bin/stp_dump3
 vendor/bin/test_model.json
-vendor/bin/thermal_core
+vendor/bin/thermal_core;DISABLE_CHECKELF
 vendor/bin/thermal_intf
 vendor/bin/touch_boost
 vendor/bin/tzdaemon
@@ -1702,7 +1702,7 @@ vendor/lib/libBeauty_v4.camera.samsung.so
 vendor/lib/libDualCamBokehCapture.camera.samsung.so
 vendor/lib/libFaceService.so
 vendor/lib/libFace_Landmark_API.camera.samsung.so
-vendor/lib/libHEVCdec_sa.ca7.android.so
+vendor/lib/libHEVCdec_sa.ca7.android.so;DISABLE_CHECKELF
 vendor/lib/libHandGesture.camera.samsung.so
 vendor/lib/libHprFace_GAE_api.camera.samsung.so
 vendor/lib/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so
@@ -1890,7 +1890,7 @@ vendor/lib/libvideobeauty.uniplugin@1.0.so
 vendor/lib/libvideobeauty_capture.uniplugin@1.0.so
 vendor/lib/libvp8dec_sa.ca7.so;DISABLE_CHECKELF
 vendor/lib/libvp8enc_sa.ca7.so;DISABLE_CHECKELF
-vendor/lib/libvp9dec_sa.ca7.so
+vendor/lib/libvp9dec_sa.ca7.so;DISABLE_CHECKELF
 vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
 vendor/lib/libwapi.so
