@@ -75,14 +75,6 @@ vendor/lib64/libsecaudiocoreutils.so
 vendor/lib64/libspatializerparamstorage.so
 
 # Audio configs
-system_ext/etc/a2dp_audio_policy_configuration.xml
-system_ext/etc/a2dp_in_audio_policy_configuration.xml
-system_ext/etc/audio_policy_configuration_bluetooth_legacy_hal.xml
-system_ext/etc/audio_policy_configuration_stub.xml
-system_ext/etc/audio_policy_engine_configuration.xml
-system_ext/etc/audio_policy_engine_default_stream_volumes.xml
-system_ext/etc/audio_policy_engine_product_strategies.xml
-system_ext/etc/audio_policy_engine_stream_volumes.xml
 vendor/etc/audio_effects.xml
 vendor/etc/audio_effects_sec.xml
 vendor/etc/audio_effects_spatializer.xml
