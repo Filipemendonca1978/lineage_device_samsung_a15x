@@ -1106,7 +1106,6 @@ vendor/lib64/libpixelflinger.so
 vendor/lib64/libpqframework.so
 vendor/lib64/libpqparamparser.so
 vendor/lib64/libpqxmlparser.so
-vendor/lib64/android.hardware.power-service-mediatek.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.0.so
@@ -1225,23 +1224,8 @@ vendor/etc/nfc/libnfc-nxp_RF.conf
 vendor/etc/libnfc-nxp.conf
 
 # Power
-system_ext/lib/vendor.mediatek.hardware.mtkpower-V2-ndk.so
-system_ext/lib64/vendor.mediatek.hardware.mtkpower-V2-ndk.so
-vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
-vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
-vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
-vendor/lib/hw/power.default.so
-vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
 vendor/lib/libpower_timer.so
-vendor/lib/vendor.mediatek.hardware.mtkpower@1.0.so
-vendor/lib/vendor.mediatek.hardware.mtkpower@1.1.so
-vendor/lib/vendor.mediatek.hardware.mtkpower@1.2.so
-vendor/lib64/hw/power.default.so
-vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
 vendor/lib64/libpower_timer.so
-vendor/lib64/vendor.mediatek.hardware.mtkpower@1.0.so
-vendor/lib64/vendor.mediatek.hardware.mtkpower@1.1.so
-vendor/lib64/vendor.mediatek.hardware.mtkpower@1.2.so
 
 # Radio
 system_ext/lib/vendor.mediatek.hardware.mtkradioex@3.0.so
@@ -1571,7 +1555,6 @@ vendor/etc/vintf/manifest/iweaver_v1_manifest.xml
 vendor/etc/vintf/manifest/lights-default-sec.xml
 vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 vendor/etc/vintf/manifest/memtrack-mediatek.xml
-vendor/etc/vintf/manifest/power-mediatek.xml
 vendor/etc/vintf/manifest/sec_c2_manifest_default0_1_1.xml
 vendor/etc/vintf/manifest/secaudiohalaidl_manifest.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.authfw@1.0-manifest.xml
@@ -1860,8 +1843,6 @@ vendor/lib/libnxp_extamp_intf.so
 vendor/lib/libpadm.so
 vendor/lib/libperfctl_vendor.so
 vendor/lib/libpkm.so
-vendor/lib/libpowerhal.so
-vendor/lib/libpowerhalwrap_vendor.so
 vendor/lib/libpq_cust_base.so
 vendor/lib/libqfp_sensortest.so
 vendor/lib/librcs_interface.so
@@ -2163,8 +2144,6 @@ vendor/lib64/libnxp_extamp_intf.so
 vendor/lib64/libpadm.so
 vendor/lib64/libperfctl_vendor.so
 vendor/lib64/libpkm.so
-vendor/lib64/libpowerhal.so
-vendor/lib64/libpowerhalwrap_vendor.so
 vendor/lib64/libpq_cust_base.so
 vendor/lib64/libqfp_sensortest.so
 vendor/lib64/libratconfig.so
