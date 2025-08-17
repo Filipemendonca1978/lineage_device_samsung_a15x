@@ -24,6 +24,7 @@ namespace_imports = [
     'device/samsung/a15x',
     'hardware/samsung',
     'hardware/mediatek',
+    'hardware/mediatek/libmtkperf_client',
 ]
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
