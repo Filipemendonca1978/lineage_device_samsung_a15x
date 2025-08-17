@@ -267,7 +267,6 @@ vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 vendor/lib64/vendor.samsung.hardware.bluetooth.audio-V1-ndk.so
 
 # Camera
-lib64/libarcsoft_photoeditor.arcsoft.so
 system_ext/lib/vendor.mediatek.hardware.camera.isphal@1.0.so:vendor/lib/vendor.mediatek.hardware.camera.isphal@1.0.so
 vendor/lib/hw/camera.unihal.default.so
 vendor/lib/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so
