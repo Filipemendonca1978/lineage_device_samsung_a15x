@@ -149,7 +149,8 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/samsung
+    hardware/samsung \
+    hardware/mediatek
 
 # Soundtrigger
 PRODUCT_PACKAGES += \
@@ -163,6 +164,27 @@ PRODUCT_PACKAGES += \
 # First Stage Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6835:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6835
+
+# WiFi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi-service \
+    hostapd \
+    libwifi-hal-wrapper \
+    wpa_supplicant \
+    libkeystore-wifi-hidl \
+    libkeystore-engine-wifi-hidl
+
+PRODUCT_PACKAGES += \
+    android.hardware.tetheroffload.config@1.0 \
+    android.hardware.tetheroffload.control@1.0 \
+    android.hardware.tetheroffload.control@1.1
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/wifi/vendor_hals.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_hals/vendor_hals.xml \
+    $(LOCAL_PATH)/configs/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
+    $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
+    $(LOCAL_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
+    $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/a15x/a15x-vendor.mk)
