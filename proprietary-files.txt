@@ -1143,9 +1143,7 @@ vendor/lib64/libteecl.so
 vendor/lib64/libwvaidl.so
 
 # Gatekeeper
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib/hw/gatekeeper.mt6835.so
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib64/hw/gatekeeper.mt6835.so
 
 # GNSS
@@ -1265,17 +1263,8 @@ vendor/lib64/sensors.sensorhub.so
 vendor/etc/sensors/hals.conf
 
 # Soundtrigger
-vendor/lib/hw/android.hardware.soundtrigger@2.0-impl.so
-vendor/lib/hw/android.hardware.soundtrigger@2.3-impl.so
 vendor/lib/hw/sound_trigger.primary.default.so;DISABLE_CHECKELF
-vendor/lib64/hw/android.hardware.soundtrigger@2.3-impl.so
 vendor/lib64/hw/sound_trigger.primary.default.so;DISABLE_CHECKELF
-
-# Thermal
-vendor/lib/hw/android.hardware.thermal@1.0-impl.so
-vendor/lib/hw/android.hardware.thermal@2.0-impl.so
-vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
-vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
 
 # Thermal configs
 vendor/etc/thermal/disable_skin_control.conf
@@ -1342,7 +1331,6 @@ vendor/bin/hw/vendor.samsung.hardware.security.skpm-service
 vendor/bin/hw/vendor.samsung.hardware.security.widevine.keyprov-service
 vendor/bin/hw/vendor.samsung.hardware.snap-service
 vendor/bin/hw/vendor.samsung.hardware.sysinput@1.3-service
-vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.tlc.iccc@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.tlc.kg-service
 vendor/bin/hw/vendor.samsung.hardware.tlc.payment@1.0-service
@@ -1513,7 +1501,6 @@ vendor/etc/init/vendor.samsung.hardware.security.vaultkeeper-service.rc
 vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprov-service.rc
 vendor/etc/init/vendor.samsung.hardware.snap-lazy.rc
 vendor/etc/init/vendor.samsung.hardware.sysinput@1.3-service.rc
-vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.tlc.iccc@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.tlc.kg-service.rc
 vendor/etc/init/vendor.samsung.hardware.tlc.payment@1.0-service.rc
@@ -1573,7 +1560,6 @@ vendor/etc/vintf/manifest/vendor.samsung.hardware.security.vaultkeeper-manifest.
 vendor/etc/vintf/manifest/vendor.samsung.hardware.security.widevine.keyprov-service.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_33.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.snap-default.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.iccc@1.0-manifest.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.kg-manifest.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.vibrator-default.xml
@@ -2266,7 +2252,6 @@ vendor/lib64/vendor.samsung.hardware.sysinput@1.0.so
 vendor/lib64/vendor.samsung.hardware.sysinput@1.1.so
 vendor/lib64/vendor.samsung.hardware.sysinput@1.2.so
 vendor/lib64/vendor.samsung.hardware.sysinput@1.3.so
-vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 vendor/lib64/vendor.samsung.hardware.tlc.iccc@1.0-impl.so
 vendor/lib64/vendor.samsung.hardware.tlc.iccc@1.0.so
 vendor/lib64/vendor.samsung.hardware.tlc.kg-V2-ndk.so
