@@ -74,20 +74,6 @@ vendor/lib64/libprofileparamstorage.so
 vendor/lib64/libsecaudiocoreutils.so
 vendor/lib64/libspatializerparamstorage.so
 
-# Audio configs
-vendor/etc/audio_effects.xml
-vendor/etc/audio_effects_sec.xml
-vendor/etc/audio_effects_spatializer.xml
-vendor/etc/audio_policy_configuration.xml
-vendor/etc/audio_policy_configuration_sec.xml
-vendor/etc/audio_policy_volumes.xml
-vendor/etc/bluetooth_audio_policy_configuration.xml
-vendor/etc/default_volume_tables.xml
-vendor/etc/hearing_aid_audio_policy_configuration.xml
-vendor/etc/r_submix_audio_policy_configuration.xml
-vendor/etc/situation_audio_policy_volumes_sec.xml
-vendor/etc/usb_audio_policy_configuration.xml
-
 # Audio calibration
 vendor/etc/audio_param/AudioParamOptions_mgvi.xml
 vendor/etc/audio_param/AudioParamOptions_vext.xml
@@ -1555,7 +1541,6 @@ vendor/etc/aee-config
 vendor/etc/armnn_app.config
 vendor/etc/audio_device.xml
 vendor/etc/audio_em.xml
-vendor/etc/audio_policy.conf
 vendor/etc/aurisys_config.xml
 vendor/etc/aurisys_config_rv.xml
 vendor/etc/btcon.json
