@@ -20,7 +20,7 @@ service boot_log_kernel /system/bin/logcat -b kernel -D -f /cache/boot_log_kerne
     disabled
     oneshot
 
-on post-fs-data
+on post-fs
 # Clear existing log and start the service
     rm /cache/boot_log_full.txt
     rm /cache/boot_log_crash.txt
