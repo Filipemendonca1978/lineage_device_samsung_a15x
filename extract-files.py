@@ -102,11 +102,17 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/lib/libSecC2ComponentStore.so', 'vendor/lib64/libSecC2ComponentStore.so'): blob_fixup()
         .add_needed('libshim_c2.so'),
 
-    ('vendor/lib/libskeymint10device.so', 'vendor/lib64/libskeymint10device.so',
-     'vendor/lib/libskeymint_cli.so', 'vendor/lib64/libskeymint_cli.so'): blob_fixup()
+    (
+    'vendor/bin/hw/android.hardware.security.keymint-service.mtk',
+    'vendor/lib64/libskeymint10device.so',
+    'vendor/lib64/libskeymint_cli.so'
+    ): blob_fixup()
         .replace_needed('libcrypto.so', 'libcrypto-tm.so')
         .add_needed('libshim_crypto.so')
         .add_needed('android.hardware.security.rkp-V3-ndk.so'),
+
+    'vendor/etc/init/android.hardware.security.keymint-service-mtk.rc': blob_fixup()
+        .regex_replace('android.hardware.security.keymint-service', 'android.hardware.security.keymint-service.mtk'),
 
     ('vendor/lib/vendor.samsung.hardware.camera.device@5.0-impl.so', 'vendor/lib64/vendor.samsung.hardware.camera.device@5.0-impl.so'): blob_fixup()
         .add_needed('libshim_camera.so'),

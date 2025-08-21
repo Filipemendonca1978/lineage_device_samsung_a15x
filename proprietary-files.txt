@@ -1233,6 +1233,8 @@ vendor/lib/hw/android.hardware.renderscript@1.0-impl.so
 vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so
 
 # Security
+vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.hardware.security.keymint-service.mtk
+vendor/etc/init/android.hardware.security.keymint-service.rc:vendor/etc/init/android.hardware.security.keymint-service-mtk.rc
 vendor/lib64/libskeymint10device.so
 vendor/lib64/libskeymint_cli.so
 vendor/lib64/vendor.samsung.hardware.keymint-V2-ndk.so
