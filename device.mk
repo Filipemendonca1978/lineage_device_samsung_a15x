@@ -126,6 +126,7 @@ PRODUCT_PACKAGES += \
     install-recovery.sh \
 
 PRODUCT_PACKAGES += \
+    fstab.mt6835 \
     fstab.emmc \
     factory_init.connectivity.common.rc \
     factory_init.connectivity.rc \
@@ -154,9 +155,6 @@ PRODUCT_PACKAGES += \
     multi_init.rc \
     init.recovery.mt6835.rc \
     init.recovery.samsung.rc \
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_COPY_OUT_RAMDISK)/fstab.emmc
 
 # RIL
 PRODUCT_PACKAGES += \
