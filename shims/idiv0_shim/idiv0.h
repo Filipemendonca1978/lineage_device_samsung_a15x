@@ -22,6 +22,10 @@ extern int __aeabi_uidiv0(void);
 extern uint64_t __aeabi_uidiv(uint64_t numerator, uint64_t denominator);
 extern int __aeabi_idiv(int numerator, int denominator);
 extern uint64_t __aeabi_uidivmod(uint64_t numerator, uint64_t denominator);
+typedef struct { int quot; int rem; } idiv_t;
+extern idiv_t __aeabi_idivmod(int numerator, int denominator);
+typedef struct { long quot; long rem; } ldiv_t;
+extern ldiv_t __aeabi_ldivmod(long numerator, long denominator);
 extern int __srget(FILE *stream);
 #endif
 }

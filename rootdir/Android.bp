@@ -89,6 +89,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.a15x.rc",
+    src: "etc/init.a15x.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.mt6835.rc",
     src: "etc/init.mt6835.rc",
     sub_dir: "init/hw",
@@ -99,6 +106,13 @@ prebuilt_etc {
     name: "init.mt6835.usb.rc",
     src: "etc/init.mt6835.usb.rc",
     sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.logger-service.rc",
+    src: "etc/init.logger-service.rc",
+    relative_install_path: "init/hw",
     vendor: true,
 }
 
@@ -183,5 +197,11 @@ prebuilt_etc {
 prebuilt_etc {
     name: "fstab.emmc",
     src: "etc/fstab.emmc",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "fstab.mt6835",
+    src: "etc/fstab.mt6835",
     vendor: true,
 }

@@ -7,6 +7,7 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
 # Inherit some common Pixelage stuff.
 $(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
@@ -31,6 +32,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="a15xub-user 15 AP3A.240905.015.A2 A156MUBS6CYF2 release-keys"
-
-BUILD_FINGERPRINT := samsung/a15xub/a15x:15/AP3A.240905.015.A2/A156MUBS6CYF2:user/release-keys
+    BuildDesc="a15xub-user 15 AP3A.240905.015.A2 A156MUBS6CYF2 release-keys"
+    BuildFingerprint="samsung/a15xub/a15x:15/AP3A.240905.015.A2/A156MUBS6CYF2:user/release-keys" \
+    DeviceProduct=a15xub \
+    SystemName=a15xub

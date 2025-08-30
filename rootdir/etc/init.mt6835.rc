@@ -11,6 +11,7 @@ import ${ro.vendor.rc}init.volte.rc
 import ${ro.vendor.rc}init.mal.rc
 import ${ro.vendor.rc}${ro.vendor.init.sensor.rc}
 import ${ro.vendor.rc}init.cgroup.rc
+import /vendor/etc/init/hw/init.logger-service.rc
 
 # init.modem.rc must be the LAST rc file because vold.post_fs_data_done is set in it
 import ${ro.vendor.rc}init.modem.rc
@@ -2058,17 +2059,6 @@ service loghidlsysservice /system/bin/loghidlsysservice
     user root
     group system
     disabled
-
-# add meta_tst for ATM
-service meta_tst /vendor/bin/meta_tst
-    interface vendor.mediatek.hardware.meta@1.0::IMetaTst MetaATDHidlServer
-    class core
-    user system
-    group radio gps system wifi audio bluetooth media
-    capabilities NET_RAW NET_ADMIN
-    socket meta-atci stream 660 radio system
-    disabled
-    oneshot
 
 service factory_no_image /vendor/bin/factory
     user root
